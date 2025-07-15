@@ -46,5 +46,12 @@ Antes do processo passo a passo, será feita uma atualização completa do siste
 </details>
 
 
+### Como utilizar os scripts:
+```
+git clone https://github.com/SmileYzn/arch-pi.git
+cd arch-pi
+chmod +x cinnamon.sh
+./cinnamon.sh
+```
 
 Fique avontade para contribuir e melhorar essa lista de pacotes 🙏
