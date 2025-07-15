@@ -174,17 +174,6 @@ fi
 PASSO=$((PASSO+1))
 echo -e $DIVISOR
 #
-# Drawing, gThumb, Peek
-read -p "${PASSO}. Drawing, gThumb, Peek: " resposta
-resposta=$(echo "$resposta" | tr '[:upper:]' '[:lower:]')
-if [[ "$resposta" == "sim" || "$resposta" == "s" ]]; then
-    clear
-    echo -e "${CIANO}${PASSO}.1${NORMAL} - Instalando Drawing, gThumb, Peek"
-    sudo pacman -S --needed --noconfirm drawing peek gthumb
-fi
-PASSO=$((PASSO+1))
-echo -e $DIVISOR
-#
 # Instalar Libreoffice (FRESH)
 read -p "${PASSO}. Instalar Libreoffice (FRESH): " resposta
 resposta=$(echo "$resposta" | tr '[:upper:]' '[:lower:]')
@@ -192,6 +181,28 @@ if [[ "$resposta" == "sim" || "$resposta" == "s" ]]; then
     clear
     echo -e "${CIANO}${PASSO}.1${NORMAL} - Instalando Libreoffice"
     sudo pacman -S --needed --noconfirm libreoffice-fresh libreoffice-fresh-pt-br
+fi
+PASSO=$((PASSO+1))
+echo -e $DIVISOR
+#
+# Thunderbird
+read -p "${PASSO}. Thunderbird: " resposta
+resposta=$(echo "$resposta" | tr '[:upper:]' '[:lower:]')
+if [[ "$resposta" == "sim" || "$resposta" == "s" ]]; then
+    clear
+    echo -e "${CIANO}${PASSO}.1${NORMAL} - Instalando Thunderbird"
+    sudo pacman -S --needed --noconfirm thunderbird thunderbird-i18n-pt-br
+fi
+PASSO=$((PASSO+1))
+echo -e $DIVISOR
+#
+# Drawing, gThumb, Peek
+read -p "${PASSO}. Drawing, gThumb, Peek: " resposta
+resposta=$(echo "$resposta" | tr '[:upper:]' '[:lower:]')
+if [[ "$resposta" == "sim" || "$resposta" == "s" ]]; then
+    clear
+    echo -e "${CIANO}${PASSO}.1${NORMAL} - Instalando Drawing, gThumb, Peek"
+    sudo pacman -S --needed --noconfirm drawing peek gthumb
 fi
 PASSO=$((PASSO+1))
 echo -e $DIVISOR
