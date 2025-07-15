@@ -158,7 +158,7 @@ resposta=$(echo "$resposta" | tr '[:upper:]' '[:lower:]')
 if [[ "$resposta" == "sim" || "$resposta" == "s" ]]; then
     clear
     echo -e "${CIANO}${PASSO}.1${NORMAL} - Instalando extras do Nemo"
-    sudo pacman -S --needed --noconfirm nemo nemo-audio-tab nemo-emblems nemo-fileroller nemo-image-converter nemo-pastebin nemo-preview nemo-seahorse nemo-share
+    sudo pacman -S --needed --noconfirm nemo nemo-audio-tab nemo-emblems nemo-fileroller nemo-image-converter nemo-preview nemo-seahorse nemo-share
 fi
 PASSO=$((PASSO+1))
 echo -e $DIVISOR
