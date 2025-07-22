@@ -36,7 +36,7 @@ fi
 
 # Verificar ambiente do cinnamon
 if [[ $DE != "Cinnamon"* ]]; then
-  echo -e "${VERMELHO}${NEGRITO}Ambiente ${VERDE}Cinnamion Desktop${VERMELHO} não instalado.${REGULAR}${NORMAL}"
+  echo -e "${VERMELHO}${NEGRITO}Ambiente ${VERDE}Cinnamon Desktop${VERMELHO} não instalado.${REGULAR}${NORMAL}"
 exit
 fi
 
