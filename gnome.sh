@@ -182,22 +182,27 @@ executar()
       cd /home/$USUARIO
 
       # Clonar Colloid gtk theme e Colloid icon theme
-      git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
-      git clone https://github.com/vinceliuice/Colloid-icon-theme.git
+      git clone https://github.com/vinceliuice/Fluent-gtk-theme.git
+      git clone https://github.com/vinceliuice/Fluent-icon-theme.git
 
       # Instalar GTK
-      cd /home/$USUARIO/Colloid-gtk-theme
-      sudo ./install.sh --tweaks rimless
-      ./install.sh --tweaks rimless
-      ./install.sh --tweaks rimless -c dark -l fixed
+      cd /home/$USUARIO/Fluent-gtk-theme
+      sudo ./install.sh --size standard --icon arch --tweaks solid
+      ./install.sh --size standard --icon arch --tweaks solid
+      ./install.sh --size standard --icon arch --tweaks solid -c dark -l
       
       # Instalar ícones
-      cd /home/$USUARIO/Colloid-icon-theme
+      cd /home/$USUARIO/Fluent-icon-theme
       sudo ./install.sh
 
       # Instalar cursor
-      cd /home/$USUARIO/Colloid-icon-theme/cursors
+      cd /home/$USUARIO/Fluent-icon-theme/cursors
       sudo ./install.sh
+
+      # Limpar
+      cd /home/$USUARIO
+      rm -rf /home/$USUARIO/Fluent-gtk-theme
+      rm -rf /home/$USUARIO/Fluent-icon-theme
     ;;
     *)
       echo -e "${VERMELHO}Opção '$1' não encontrada.${NORMAL}"
