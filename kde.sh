@@ -69,13 +69,12 @@ TAREFA=(
   "Yet Another Yogurt (YAY)"
   "Limpeza de pacotes"
   "Criar grupo 'autologin'"
-  "Instalar Colloid Theme"
 )
 
 # Executar
 executar()
 {
-  if [ "$1" -ge 0 ] && [ "$1" -le 17 ]; then
+  if [ "$1" -ge 0 ] && [ "$1" -le 14 ]; then
     echo -e "${VERDE}${1}${NORMAL} ${TAREFA[${1}]}"
     echo -e $DIVISOR
   fi
@@ -169,33 +168,6 @@ executar()
         # Adicionar o usuário ao grupo
         sudo gpasswd autologin -a ${USUARIO}
     ;;
-    15)
-      # Abrir pasta do usuário
-      cd /home/$USUARIO
-
-      # Clonar Colloid gtk theme e Colloid icon theme
-      git clone https://github.com/vinceliuice/Fluent-gtk-theme.git
-      git clone https://github.com/vinceliuice/Fluent-icon-theme.git
-
-      # Instalar GTK
-      cd /home/$USUARIO/Fluent-gtk-theme
-      sudo ./install.sh --size standard --icon arch --tweaks solid
-      ./install.sh --size standard --icon arch --tweaks solid
-      ./install.sh --size standard --icon arch --tweaks solid -c dark -l
-      
-      # Instalar ícones
-      cd /home/$USUARIO/Fluent-icon-theme
-      sudo ./install.sh
-
-      # Instalar cursor
-      cd /home/$USUARIO/Fluent-icon-theme/cursors
-      sudo ./install.sh
-
-      # Limpar
-      cd /home/$USUARIO
-      rm -rf /home/$USUARIO/Fluent-gtk-theme
-      rm -rf /home/$USUARIO/Fluent-icon-theme
-    ;;
     *)
       echo -e "${VERMELHO}Opção '$1' não encontrada.${NORMAL}"
     ;;
@@ -236,7 +208,7 @@ while true; do
   # Loop das opções selecionadas
   for opcao in "${opcoes[@]}"; do
     # Executar opção específica
-    if [ "$opcao" -ge 0 ] && [ "$opcao" -le 17 ]; then
+    if [ "$opcao" -ge 0 ] && [ "$opcao" -le 14 ]; then
       clear
       echo -e $DIVISOR
       executar $opcao
