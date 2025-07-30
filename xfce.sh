@@ -154,7 +154,7 @@ executar()
       sudo pacman -S --needed --noconfirm drawing peek gthumb
     ;;
     13)
-      sudo pacman -S --needed --noconfirm dconf-editor gnome-online-accounts gparted lightdm-gtk-greeter-settings mate-calc mpv seahorse
+      sudo pacman -S --needed --noconfirm catfish dconf-editor gnome-online-accounts gparted lightdm-gtk-greeter-settings mate-calc mpv seahorse zeitgeist
     ;;
     14)
       # Instalar o pacote YAY no modo binário
