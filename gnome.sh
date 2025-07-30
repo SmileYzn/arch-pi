@@ -71,7 +71,7 @@ TAREFA=(
   "Yet Another Yogurt (YAY)"
   "Limpeza de pacotes"
   "Criar grupo 'autologin'"
-  "Instalar Colloid Theme"
+  "Instalar Fluent Design GTK Theme"
 )
 
 # Executar
@@ -181,7 +181,7 @@ executar()
       # Abrir pasta do usuário
       cd /home/$USUARIO
 
-      # Clonar Colloid gtk theme e Colloid icon theme
+      # Clonar Fluent gtk theme e Fluent icon theme
       git clone https://github.com/vinceliuice/Fluent-gtk-theme.git
       git clone https://github.com/vinceliuice/Fluent-icon-theme.git
 
