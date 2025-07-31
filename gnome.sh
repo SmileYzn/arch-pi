@@ -153,7 +153,7 @@ executar()
       sudo pacman -S --needed --noconfirm evince loupe peek
     ;;
     13)
-      sudo pacman -S --needed --noconfirm baobab dconf-editor file-roller gnome-backgrounds gnome-calculator gnome-calendar gnome-characters gnome-disk-utility gnome-font-viewer gnome-online-accounts gnome-screenshot gnome-system-monitor seahorse totem
+      sudo pacman -S --needed --noconfirm baobab dconf-editor file-roller gnome-backgrounds gnome-calculator gnome-calendar gnome-characters gnome-disk-utility gnome-font-viewer gnome-online-accounts gnome-screenshot gnome-system-monitor seahorse simple-scan totem
     ;;
     14)
       # Instalar o pacote YAY no modo binário
