@@ -154,7 +154,7 @@ executar()
       sudo pacman -S --needed --noconfirm drawing peek gthumb
     ;;
     13)
-      sudo pacman -S --needed --noconfirm baobab dconf-editor file-roller gnome-backgrounds gnome-calculator gnome-calendar gnome-characters gnome-disk-utility gnome-font-viewer gnome-online-accounts gnome-screenshot gnome-system-monitor mpv seahorse
+      sudo pacman -S --needed --noconfirm baobab dconf-editor file-roller gnome-backgrounds gnome-calculator gnome-calendar gnome-characters gnome-disk-utility gnome-font-viewer gnome-online-accounts gnome-screenshot gnome-system-monitor mpv seahorse simple-scan
     ;;
     14)
       # Instalar o pacote YAY no modo binário
