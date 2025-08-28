@@ -15,9 +15,6 @@ MAGENTA="\e[35m"
 CIANO="\e[36m"
 NORMAL="\e[0m"
 
-# Ambiente
-DE=$(plasmashell --version)
-
 # Usuário padrão (UID 1000)
 USUARIO=$(id -nu 1000)
 
@@ -31,12 +28,6 @@ echo -e $DIVISOR
 # Verificar acesso root
 if [[ $EUID -eq 0 ]]; then
   echo -e "${VERMELHO}${NEGRITO}Esse script NÃO deve ser executado como ${USER}${REGULAR}${NORMAL}"
-exit
-fi
-
-# Verificar ambiente do cinnamon
-if [[ $DE != "plasmashell"* ]]; then
-  echo -e "${VERMELHO}${NEGRITO}Ambiente ${VERDE}KDE Plasma${VERMELHO} não instalado.${REGULAR}${NORMAL}"
 exit
 fi
 
