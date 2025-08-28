@@ -156,7 +156,7 @@ executar()
     ;;
     13)
         # Limpar pacotes
-        sudo pacman -R engrampa htop vim vim-runtime
+        sudo pacman -R htop vim vim-runtime
 
         # Limpar pacotes
         sudo pacman -Rcs $(pacman -Qdtq)
